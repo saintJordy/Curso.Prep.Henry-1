@@ -1,0 +1,14 @@
+ En un archivo de texto separado que debes crear, 
+ escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. 
+ Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+ 1. "for" :  se utiliza para repetir una o más instrucciones un determinado número de veces. 
+             De entre todos los bucles (es algo que se repite), 
+             el FOR se suele utilizar cuando sabemos seguro el número de veces que queremos que se ejecute.
+ 2. "&&"  :  se entiende como si fuera un "y". Es decir, en la condición de la sentencia IF, 
+             se puede añadir este operador para que en vez de una sola condición, se cumplan 2 o más condiciones.          
+ 3. "||"  :  Determinará si una de las expresiones es true. Devolverá true si una (o ambas) 
+             de las expresiones es true. Devolverá false si AMBAS expresiones son false.
+ 4.  "!"  :  Este operardo lo que hace es evaluar y arrojar el resultado contrario , si es true dara como resultado false
+             si es false arrojara como resultado true.
+                                   

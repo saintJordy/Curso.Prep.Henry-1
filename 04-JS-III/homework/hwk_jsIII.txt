@@ -1,0 +1,2 @@
+Un Array, también llamado matriz, arreglo o vector, no es más que un tipo de dato que permite guardar 
+una lista de datos y a cada dato se le asigna un índice que indica su posición y que luego por el mismo indice puede ser llamado.

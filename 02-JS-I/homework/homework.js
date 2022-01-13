@@ -1,21 +1,28 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 // Crea una variable "string", puede contener lo que quieras:
+//const nuevaString = null
+//otfes: const nuevaString = "cualquiera";
 const nuevaString = "hola";
 
 // Crea una variable numérica, puede ser cualquier número:
+//igual que antes
 const nuevoNum = 1369;
 
-// Crea una variable booleana:
+// Crea una variable booleana:}
+// es true o false.
 const nuevoBool = true;
 
 // Resuelve el siguiente problema matemático:
+//primero resuelve la operacion y luego la comparacion
 const nuevaResta = 10 - 5 === 5;
 
 // Resuelve el siguiente problema matemático:
+//resulve la multip y luego la comparacion.
 const nuevaMultiplicacion = 10 * 4 === 40 ;
 
 // Resuelve el siguiente problema matemático:
+// R: 
 const nuevoModulo = 21 % 5 === 1;
 
 
@@ -28,14 +35,14 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-  return str;
+    return str;
 }
 
 function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-    return x+y;
+     return x+y;
 }
 
 function resta(x, y) {
@@ -72,7 +79,10 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-if (str1.length ===str2.length){
+  //aki el ".length" fuciona asi: si str1=hola, entonces length devueve 4 porque hola 
+  //tiene 4 letras osea que cuentas los caracteres y devuelve ese valor.
+  // otra forma (return str1.length === str2.length) esta forma compara directamente y devuelve un booleno segun 
+if (str1.length ===str2.length){  // esta forma natural del if.
 return true
 } else {
   return false
@@ -111,7 +121,7 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if ((num % 2)=== 0){
+  if ((num % 2)=== 0){  //ojo aki es signo de porcentaje(%) porque se busca que el reciduo se igual a (cero)
     return true
   } else {
     return false
@@ -122,11 +132,16 @@ function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if ((num % 2) !== 0){
-    return true
-  } else {
+ // if ((num % 2) !== 0){
+ //  return true
+ // } else {
+ //   return false
+  //}
+  if ((num % 2)=== 0){  //la forma para par funciona solo que cambiando el booleano
     return false
-  }
+  } else {
+    return true
+}
 }
 
 function elevarAlCuadrado(num) {
@@ -151,7 +166,7 @@ function elevar(num, exponent) {
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  return Math.round(num);
+  return Math.round(num);   // ojo este es para redondear al mas proximo
 }
 
 function redondearHaciaArriba(num) {
@@ -191,8 +206,8 @@ function agregarSimboloExclamacion(str) {
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
-  // Tu código:
-  var combinar = nombre + " " + apellido;
+  // Tu código: (return nombre + " " + apellido;) es otra forma
+   var combinar = nombre + " " + apellido;
   return combinar;
 }
 
@@ -212,7 +227,7 @@ function obtenerAreaRectangulo(alto, ancho) {
 
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
-  //Escribe tu código aquí
+  //Escribe tu código aquí  return lago*4;
   return lado + lado + lado + lado;
 }
 
@@ -229,6 +244,7 @@ function deEuroAdolar(euro){
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
   return euro * 1.20;
+  //o plantear la ecuacion let dolar = eruro * 1.2    return dolar;
 }
 
 
@@ -238,6 +254,11 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
+  //let letra1 = letra.tolowercase()   otro ej
+  //  if (letra1 == "a"||letra1 == "e"||letra1 == "i"||letra1 == "o"||letra1 == "u"){
+  //      return "Es vocal"
+  //    } else {
+  //      return "Dato incorrecto"} este para colocar todo en minuscula y menos codigo.
   if(letra.length > 1){
     return "Dato incorrecto"   
   }
@@ -245,7 +266,7 @@ function esVocal(letra){
       letra === "e"|| 
       letra === "i"|| 
       letra === "o"||
-      letra ==="u"){
+      letra === "u"){
         return "Es vocal"
       } else {
         return "Dato incorrecto"
